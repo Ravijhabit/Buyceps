@@ -10,7 +10,9 @@
   padding:10px 15px;
   margin: 10px 0;
   background: white;
-  border:2px solid black;
+  cursor: pointer;
+  border-radius:20px;
+  transition: all 1s;
 }
 
 .cards>h1{
@@ -34,36 +36,25 @@
   padding:4px;
   border-radius: 10px;
   color:white;
+  width:45%;
+  text-align: center;
+  font-size:12px;
 }
 .type{
-  width:80%;
-  gap:5px;
+  gap:4px;
 }
 
-.fire{
-  background-color: orange;
+.cards:hover{
+  box-shadow: 2px 2px 20px  rgb(243, 42, 136);
+  transform: translateY(-10px);
 }
 
-.bug{
-  background-color: rgb(95, 204, 95);
-}
-
-.flying{
-  background:linear-gradient(180deg,rgb(115, 221, 240),gray);
-}
-
-.water{
-  background-color: rgb(88, 124, 192);
-}
-
-.poison{
-  background-color: rgb(177, 144, 207);
-}
 
 .pokemonRow{
   width:70%;
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background: white;
 }
 

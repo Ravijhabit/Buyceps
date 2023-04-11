@@ -8,7 +8,6 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({pokemons}) {
-  console.log(pokemons);
   return (
     <section className={`${styles.pokemonRow} ${styles.flex}`}>
       {pokemons.map(pokemon => 
@@ -35,7 +34,7 @@ export async function getStaticProps(){
     }
     `,
     variables:{
-      "first":16
+      "first":20
     }
   })
   return{
